@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v7.0": {
       "MainMenu/1.0.0": {
         "dependencies": {
-          "LibraryForKursovik": "1.0.0"
+          "LibraryForCoursework": "1.0.0"
         },
         "runtime": {
           "MainMenu.dll": {}
         }
       },
-      "LibraryForKursovik/1.0.0": {
+      "LibraryForCoursework/1.0.0": {
         "runtime": {
-          "LibraryForKursovik.dll": {}
+          "LibraryForCoursework.dll": {}
         }
       }
     }
@@ -27,7 +27,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "LibraryForKursovik/1.0.0": {
+    "LibraryForCoursework/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LibraryForCoursework;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MainMenu
 {
@@ -28,44 +30,55 @@ namespace MainMenu
             hStep.Text = "0,1";
             epsilon.Text = "0,001";
         }
-        public double[] A;
+
         public void CalculateSumSeries_Click(object sender, RoutedEventArgs e)
         {
-
-            //string[] row = { "x=-0,9", "A[0]", "0,1231" };
-            //ListViewItem lvi = new ListViewItem(new string[] { "x=-0,9", "A[0]", "0,1231" });
-            //outpuAarrayA.Items.Add(lvi);
-            //outpuAarrayA.Items.Add(new ListViewItem
-            //{
-            //    Content = new string[] { "x=-0,9", "A[0]", "0,1231" }
-            //});
-
-
-            //double eps = Convert.ToDouble(epsilon.Text);
-            //double a = Convert.ToDouble(xInitial.Text);
-            //double b = Convert.ToDouble(xFinal.Text);
-            //double h = double.Parse(hStep.Text);
-            double eps = 0.001;
-            double a = -0.9;
-            double b = 0.9;
-            double h = 0.1;
-            int j = 0;
-
-            LibraryForKursovik.Class1 class1 = new LibraryForKursovik.Class1();
-
-            outpuAarrayA.Text += $"  X                               ";
-            outpuAarrayA.Text += $"Контрольная формула         ";
-            outpuAarrayA.Text += $"                        Суммы рядов\n";
-
-            for (double x = a; x < b; x += h)
+            try
             {
-                //A[j] = class1.Function(x);
-                outpuAarrayA.Text += $" A[{j}]                       ";
-                outpuAarrayA.Text += $"   {class1.Function(x):f5}        ";
-                outpuAarrayA.Text += $"                           " +
-                $"                       {class1.CalculateSumSeries(x, eps):f5} \n";
-                j++;
+                DataController controller = new DataController();
+            AllData.E = Convert.ToDouble(epsilon.Text);
+            AllData.xInitial = Convert.ToDouble(xInitial.Text);
+            AllData.xFinal = Convert.ToDouble(xFinal.Text);
+            AllData.H = Convert.ToDouble(hStep.Text);
+
+            int c = 0;
+            for (double i = AllData.xInitial; i <= AllData.xFinal; i += AllData.H)
+            {
+                c++;
+                
             }
+            AllData.LenghtA = c;
+            AllData.ArrayA = new double[AllData.LenghtA];
+            AllData.ArrayAControl = new double[AllData.LenghtA];
+            AllData.ArrayB = new double[AllData.ArrayA.Length, AllData.ArrayA.Length];
+            AllData.ArrayC = new double[AllData.ArrayA.Length];
+            AllData.ArrayY = new double[AllData.ArrayA.Length];
+
+            outpuAarrayA.Text += $"  X                             ";
+            outpuAarrayA.Text += $"Суммы рядов         ";
+            outpuAarrayA.Text += $"                               Контрольная формула\n";
+
+            
+                
+
+                controller.SetArrayA();
+
+                for (int j = 0; j < AllData.ArrayA.Length; j++)
+                {
+                    outpuAarrayA.Text += $" A[{j}]                       ";
+                    outpuAarrayA.Text += $"   {AllData.ArrayA[j]:f5}        ";
+                    outpuAarrayA.Text += $"                          " +
+                    $"                       {AllData.ArrayAControl[j]:f5} \n";
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"{ ex}");
+            }
+
+            
+
+            
         }
 
         private void Сlear_Click(object sender, RoutedEventArgs e)

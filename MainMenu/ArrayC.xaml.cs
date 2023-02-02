@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LibraryForCoursework;
 
 namespace MainMenu
 {
@@ -23,6 +24,21 @@ namespace MainMenu
         public ArrayC()
         {
             InitializeComponent();
+        }
+
+        private void FillArray_Click(object sender, RoutedEventArgs e)
+        {
+            DataController controller = new DataController();
+            controller.SetArrayC();
+            for (int i = 0; i < AllData.ArrayC.Length; i++)
+            {
+                ArrayCGrid.Text += $"C[{i}]            {AllData.ArrayC[i]:f5}  \n";
+            }
+        }
+
+        private void SortArray_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

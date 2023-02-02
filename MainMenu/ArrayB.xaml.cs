@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LibraryForCoursework;
 
 namespace MainMenu
 {
@@ -26,54 +27,36 @@ namespace MainMenu
             InitializeComponent();
             lowerBound.Text = "-25";
             upperBound.Text = "30";
-
         }
 
         private void FillArray_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                double a = Convert.ToInt32(lowerBound.Text);
-                double b = Convert.ToInt32(upperBound.Text);
+                DataController controller = new DataController();
+                AllData.lowerBound = Convert.ToInt32(lowerBound.Text);
+                AllData.upperBound = Convert.ToInt32(upperBound.Text);
 
-                //int count = 19;
+                controller.SetArrayB();
 
-                ////ArrayBGrid.CountTerms[0] = count;
-                ////ArrayBGrid.ColumnCount = count;
-                int[,] mas = new int[19, 19];
-                int i, j;
-                Random rand = new Random();
-
-
-                for (i = 0; i < 19; i++)
-                    for (j = 0; j < 19; j++)
-                        mas[i,j] = rand.Next();
-
-
-                //Выводим матрицу в dataGridView1
-                //for (i = 0; i < dataGridView1.RowCount; i++)
-                //    for (j = 0; j < dataGridView1.ColumnCount; j++)
-                //        ArrayBGrid.Rows[i].Cells[j].Value = Convert.ToString(mas[i, j]);
-
-                
-                        ArrayBGrid.ItemsSource = mas;
-
+                for (int i = 0; i < AllData.ArrayB.GetLength(0); i++)
+                {   
+                    for (int j = 0; j < AllData.ArrayB.GetLength(1); j++)
+                    {
+                        ArrayBGrid.Text += "    " + AllData.ArrayB[i, j];
+                    }
+                    ArrayBGrid.Text += "\n";
+                }                    
             }
-            //использование
-           
-
             catch
             {
                 MessageBox.Show("Проверьте заполнение полей условий массива");
             }
-
         }
         
-        
-
-        private void FillInverseMatrix_Click(object sender, RoutedEventArgs e)
+        private void Сlear_Click(object sender, RoutedEventArgs e)
         {
-
+            ArrayBGrid.Text = null;
         }
     }
 }

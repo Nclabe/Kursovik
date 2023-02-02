@@ -38,31 +38,23 @@
             </Grid.RowDefinitions>
 
             <Button x:Name="FillArray" Click="FillArray_Click" Grid.Row="0" >Заполнить</Button>
-            <Button x:Name="FillInverseMatrix" Click="FillInverseMatrix_Click" Grid.Row="2" >Обратная матрица</Button>
+            <Button x:Name="Сlear" Click="Сlear_Click" Grid.Row="2" >Очистить</Button>
 
         </Grid>
 
         <Grid Grid.RowSpan="2" Grid.Column="1" Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition Width="20"></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="17" Margin="20 0 0 0">Массив В</TextBlock>
-            <DataGrid x:Name="ArrayBGrid" Margin="20,0,0,20" Grid.RowSpan="2" Grid.Column="0" Grid.Row="1">
+            <TextBox x:Name="ArrayBGrid" Margin="20,0,20,20" Grid.RowSpan="2" Grid.Column="0" Grid.Row="1">
 
 
-            </DataGrid>
+            </TextBox>
 
-            <TextBlock Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="17" Margin="0 0 20 0">Обратная матрица</TextBlock>
-            <DataGrid x:Name="InverseMatrix" Margin="0,0,20,20" Grid.RowSpan="2" Grid.Column="2" Grid.Row="1">
-
-
-            </DataGrid>
+            
         </Grid>
 
 

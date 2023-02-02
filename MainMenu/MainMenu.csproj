@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LibraryForKursovik\LibraryForKursovik.csproj" />
+    
+    <ProjectReference Include="..\LibraryForCoursework\LibraryForCoursework\LibraryForCoursework.csproj" />
   </ItemGroup>
 
   <ItemGroup>
