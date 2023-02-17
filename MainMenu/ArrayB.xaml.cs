@@ -20,6 +20,7 @@ namespace MainMenu
     /// <summary>
     /// Логика взаимодействия для ArrayB.xaml
     /// </summary>
+    /// 
     public partial class ArrayB : Page
     {
         public ArrayB()
@@ -36,27 +37,18 @@ namespace MainMenu
                 DataController controller = new DataController();
                 AllData.lowerBound = Convert.ToInt32(lowerBound.Text);
                 AllData.upperBound = Convert.ToInt32(upperBound.Text);
-
                 controller.SetArrayB();
-
-                for (int i = 0; i < AllData.ArrayB.GetLength(0); i++)
-                {   
-                    for (int j = 0; j < AllData.ArrayB.GetLength(1); j++)
-                    {
-                        ArrayBGrid.Text += "    " + AllData.ArrayB[i, j];
-                    }
-                    ArrayBGrid.Text += "\n";
-                }                    
+                ArrayBGrid.ItemsSource = FormirationDataGrid.ToDataTable(AllData.ArrayB).DefaultView;
             }
             catch
             {
-                MessageBox.Show("Проверьте заполнение полей условий массива");
+                MessageBox.Show("Проверьте заполнение полей!");
             }
         }
         
         private void Сlear_Click(object sender, RoutedEventArgs e)
         {
-            ArrayBGrid.Text = null;
+            //ArrayBGrid.Text = null;
         }
     }
 }

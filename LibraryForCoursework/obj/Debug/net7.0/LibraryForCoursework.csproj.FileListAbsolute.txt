@@ -1,0 +1,52 @@
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\bin\Debug\net7.0\LibraryForCoursework.deps.json
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\bin\Debug\net7.0\LibraryForCoursework.dll
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\bin\Debug\net7.0\LibraryForCoursework.pdb
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.csproj.AssemblyReference.cache
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.AssemblyInfoInputs.cache
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.AssemblyInfo.cs
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.csproj.CoreCompileInputs.cache
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.dll
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\refint\LibraryForCoursework.dll
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.pdb
+C:\Users\8-bit\Desktop\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\ref\LibraryForCoursework.dll
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\bin\Debug\net7.0\LibraryForCoursework.deps.json
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\bin\Debug\net7.0\LibraryForCoursework.dll
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\bin\Debug\net7.0\LibraryForCoursework.pdb
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.csproj.AssemblyReference.cache
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.GeneratedMSBuildEditorConfig.editorconfig
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.AssemblyInfoInputs.cache
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.AssemblyInfo.cs
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.csproj.CoreCompileInputs.cache
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.dll
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\refint\LibraryForCoursework.dll
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.pdb
+G:\Курсовик МДК0101\LibraryForCoursework\LibraryForCoursework\obj\Debug\net7.0\ref\LibraryForCoursework.dll
+D:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.csproj.AssemblyReference.cache
+D:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.GeneratedMSBuildEditorConfig.editorconfig
+D:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.AssemblyInfoInputs.cache
+D:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.AssemblyInfo.cs
+D:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.csproj.CoreCompileInputs.cache
+D:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.dll
+D:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\refint\LibraryForCoursework.dll
+D:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.pdb
+G:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.csproj.AssemblyReference.cache
+G:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.GeneratedMSBuildEditorConfig.editorconfig
+G:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.AssemblyInfoInputs.cache
+G:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.AssemblyInfo.cs
+G:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.csproj.CoreCompileInputs.cache
+G:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.dll
+G:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\refint\LibraryForCoursework.dll
+G:\Курсовой\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.pdb
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\bin\Debug\net7.0\LibraryForCoursework.deps.json
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\bin\Debug\net7.0\LibraryForCoursework.dll
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\bin\Debug\net7.0\LibraryForCoursework.pdb
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.csproj.AssemblyReference.cache
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.AssemblyInfoInputs.cache
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.AssemblyInfo.cs
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.csproj.CoreCompileInputs.cache
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.dll
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\refint\LibraryForCoursework.dll
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\LibraryForCoursework.pdb
+C:\Users\8-bit\Desktop\KYRSOVIK\LibraryForCoursework\obj\Debug\net7.0\ref\LibraryForCoursework.dll

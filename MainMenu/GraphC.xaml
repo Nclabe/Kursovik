@@ -9,6 +9,7 @@
       Title="GraphC">
 
     <Grid Background="#FFEAEAEA">
-        
+        <Grid x:Name="grid1" Background="#FFEAEAEA" HorizontalAlignment="Center" VerticalAlignment="Center"></Grid>
+        <Button x:Name="PrintGraph" Click="PrintGraph_Click" Width="60" Height="20"></Button>
     </Grid>
 </Page>

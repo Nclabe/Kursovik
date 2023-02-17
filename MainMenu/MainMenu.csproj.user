@@ -16,7 +16,13 @@
     <Compile Update="ArrayC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ArrayY.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GraphC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TextResult.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -30,10 +36,16 @@
     <Page Update="ArrayC.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ArrayY.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="GraphC.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TextResult.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

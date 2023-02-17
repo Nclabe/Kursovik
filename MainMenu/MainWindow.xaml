@@ -6,22 +6,107 @@
         xmlns:local="clr-namespace:MainMenu"
         mc:Ignorable="d"
          Title="Main" Height="720" Width="1320" MinHeight="620" MinWidth="1020">
-    <Grid>
+    <Window.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"></Setter>
+            <Setter Property="Background" Value="#FF397C49"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" BorderThickness="0" BorderBrush="#FF09146D"
+                                Background="{TemplateBinding Background}" CornerRadius="25,25,25,25">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ThicknessAnimation Storyboard.TargetProperty="Margin"
+                                                            Duration="0:0:0.100" To="3,3,0,0"></ThicknessAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="PreviewMouseUp">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ThicknessAnimation Storyboard.TargetProperty="Margin"
+                                                            Duration="0:0:0.100" To="0"></ThicknessAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--<Style x:Key="TB" TargetType="TextBox">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Height" Value="55"></Setter>
+            <Setter Property="Foreground" Value="Gray"></Setter>
+            <Setter Property="FontSize" Value="25"></Setter>
+            <Setter Property="Padding" Value="10 10 10 0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid x:Name="root" Width="370" SnapsToDevicePixels="True">
+                            <Border Name="BackGround" BorderThickness="1" CornerRadius="6" BorderBrush="Gray"
+                                Background="{TemplateBinding Background}" />
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                          BorderThickness="0"
+                                          Padding="{TemplateBinding Padding}"
+                                          IsTabStop="False"
+                                          Background="{x:Null}"
+                                          TextElement.Foreground="{TemplateBinding Foreground}"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="Aqua"></Setter>
+                            </Trigger>
+
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="Aqua"></Setter>
+                                <Setter Property="Background" Value="#FFEDEDED"></Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>-->
+    </Window.Resources>
+    <Grid Background="#FF2F3136">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" TextAlignment="Center" FontSize="27" HorizontalAlignment="Center" VerticalAlignment="Center" >
-            Курсовой проект разработал студент <LineBreak />
-            группы 42011 Антонов Данила
-        </TextBlock>
+        <Menu Height="50" Width="440" VerticalAlignment="Top" Background="#FF2F3136" Grid.Row="0" Grid.Column="0">
+            <MenuItem Height="50" Width="147" Header="Навигация" FontSize="24" Foreground="White">
+                <MenuItem Background="#FF2F3136" Header="Массив А" />
+                <MenuItem Background="#FF2F3136" Header="Массив В" />
+                <MenuItem Background="#FF2F3136" Header="Массив С" />
+                <MenuItem Background="#FF2F3136" Header="Массив Y" />
+                <MenuItem Background="#FF2F3136" Header="График" />
+                <MenuItem Background="#FF2F3136" Header="Выйти" />
+            </MenuItem>
+            <MenuItem Height="50" Width="145" Header="Файл" FontSize="24" Foreground="White">
+                <MenuItem Background="#FF2F3136" Header="Открыть" />
+                <MenuItem Background="#FF2F3136" Header="Сохранить" />
+            </MenuItem>
+            <MenuItem Height="50" Width="147" Header="Справка" FontSize="24" Foreground="White"></MenuItem>
+        </Menu>
+        
+        <Grid Background="#FF36393F" Grid.Row="0" Grid.Column="1">
+            <TextBlock FontSize="34" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Курсовой проект</TextBlock>
+        </Grid>
 
-        <Grid Width="310" Height="480" Grid.Row="2" Grid.Column="0"  Grid.RowSpan="2" VerticalAlignment="Center" >
+        <Grid Width="310" Height="540" Grid.Row="2" Grid.Column="0"  Grid.RowSpan="2" VerticalAlignment="Center" >
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition Height="5"></RowDefinition>
@@ -36,16 +121,19 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition Height="5"></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition Height="5"></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Button  x:Name="ArrayA" Click="ArrayA_Click" Grid.Row="0" Grid.Column="2" FontSize="22">Массив А</Button>
-            <Button x:Name="ArrayB" Click="ArrayB_Click" Grid.Row="2" Grid.Column="2" FontSize="22">Массив В</Button>
-            <Button x:Name="ArrayC" Click="ArrayC_Click" Grid.Row="4" Grid.Column="2" FontSize="22">Массив С</Button>
-            <Button x:Name="GraphC"  Click="GraphC_Click" Grid.Row="6" Grid.Column="2" FontSize="22">График</Button>
-            <Button Grid.Row="8" Grid.Column="2" FontSize="22">Результат</Button>
-            <Button Grid.Row="10" Grid.Column="2" FontSize="22">Сохранить</Button>
-            <Button Grid.Row="12" Grid.Column="2" FontSize="22">Выход</Button>
+            <Button x:Name="ArrayA" Style="{StaticResource ButtonStyle}" Click="ArrayA_Click" Grid.Row="0" Grid.Column="2" FontSize="22">Массив А</Button>
+            <Button x:Name="ArrayB" Style="{StaticResource ButtonStyle}" Click="ArrayB_Click" IsEnabled="True" Grid.Row="2" Grid.Column="2" FontSize="22">Массив В</Button>
+            <Button x:Name="ArrayC" Style="{StaticResource ButtonStyle}" Click="ArrayC_Click" IsEnabled="True" Grid.Row="4" Grid.Column="2" FontSize="22">Массив С</Button>
+            <Button x:Name="ArrayY" Style="{StaticResource ButtonStyle}" Click="ArrayY_Click" IsEnabled="True" Grid.Row="6" Grid.Column="2" FontSize="22">Массив Y</Button>
+            <Button x:Name="GraphC" Style="{StaticResource ButtonStyle}" Click="GraphC_Click" IsEnabled="True" Grid.Row="8" Grid.Column="2" FontSize="22">График</Button>
+            <Button x:Name="TextResult" Style="{StaticResource ButtonStyle}" Click="TextResult_Click" IsEnabled="True"  Grid.Row="10" Grid.Column="2" FontSize="22">Результат</Button>
+            <Button x:Name="Save" Style="{StaticResource ButtonStyle}" Click="Save_Click" IsEnabled="True"  Grid.Row="12" Grid.Column="2" FontSize="22">Сохранить</Button>
+            <Button x:Name="Exit" Style="{StaticResource ButtonStyle}" Click="Exit_Click" Grid.Row="14" Grid.Column="2" FontSize="22">Выход</Button>
         </Grid>
 
-        <Frame x:Name="MyFrame" Grid.Row="1" Grid.Column="2" NavigationUIVisibility="Hidden"></Frame>
+        <Frame x:Name="MyFrame" Grid.Row="1" Grid.Column="2" NavigationUIVisibility="Hidden" Background="#FF36393F"></Frame>
     </Grid>
 </Window>

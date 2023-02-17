@@ -8,16 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="icon.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    
-    <ProjectReference Include="..\LibraryForCoursework\LibraryForCoursework\LibraryForCoursework.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="icon.png" />
+    <ProjectReference Include="..\LibraryForCoursework\LibraryForCoursework.csproj" />
   </ItemGroup>
 
 </Project>

@@ -28,7 +28,9 @@ namespace MainMenu
             list.Add(new ArrayA());
             list.Add(new ArrayB());
             list.Add(new ArrayC());
+            list.Add(new ArrayY());
             list.Add(new GraphC());
+            list.Add(new TextResult());
         }
 
         private void ArrayA_Click(object sender, RoutedEventArgs e)
@@ -45,10 +47,31 @@ namespace MainMenu
         {
             MyFrame.Content = list[2];
         }
-
-        private void GraphC_Click(object sender, RoutedEventArgs e)
+        private void ArrayY_Click(object sender, RoutedEventArgs e)
         {
             MyFrame.Content = list[3];
         }
+
+        private void GraphC_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Content = list[4];
+        }
+
+        private void TextResult_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Content = list[5];
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        
     }
 }

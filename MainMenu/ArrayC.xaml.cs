@@ -30,15 +30,27 @@ namespace MainMenu
         {
             DataController controller = new DataController();
             controller.SetArrayC();
-            for (int i = 0; i < AllData.ArrayC.Length; i++)
-            {
-                ArrayCGrid.Text += $"C[{i}]            {AllData.ArrayC[i]:f5}  \n";
-            }
-        }
 
-        private void SortArray_Click(object sender, RoutedEventArgs e)
-        {
+            //List<ArrayCStruct> items = new List<ArrayCStruct>();
 
+            //for (int j = 0; j < AllData.ArrayC.Length; j++)
+            //    items.Add(new ArrayCStruct()
+            //    {
+            //        numberGridC = $"C[{j}]",
+            //        elementGridC = $"{AllData.ArrayC[j, 0]:f5}"
+            //    });
+
+            ArrayCGrid.ItemsSource = FormirationDataGrid.ToDataTable(AllData.ArrayC).DefaultView;
+            
         }
     }
+    //public class ArrayCStruct
+    //{
+    //    public string numberGridC { get; set; }
+    //    public string elementGridC { get; set; }
+    //    public override string ToString()
+    //    {
+    //        return this.numberGridC + ", " + this.elementGridC;
+    //    }
+    //}
 }
